@@ -259,10 +259,10 @@
 </table>
 
 
-  <!-- ---------- Botón Flotante ---------- -->
-  <button class="floating-btn" id="showBtn" onclick="toggleHorario()">📅 Ver horario</button>
 
   </div>
+  <!-- ---------- Botón Flotante ---------- -->
+  <button class="floating-btn" id="showBtn" onclick="toggleHorario()">📅 Ver horario</button>
 
 
   <script>
@@ -273,12 +273,12 @@
 
       if (horario.style.display === 'none' || horario.style.display === '') {
         horario.style.display = 'block';
-        closeBtn.style.display = 'block';
+        closeBtn.style.display = 'none';
         showBtn.style.display = 'none';
       } else {
         horario.style.display = 'none';
         closeBtn.style.display = 'none';
-        showBtn.style.display = 'block';
+        showBtn.style.display = 'none';
       }
     }
 
